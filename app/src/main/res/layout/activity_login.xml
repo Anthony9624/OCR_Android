@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/phoneInputLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_login_input_keyboard_enable"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etAccount"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingStart="20.0dip"
+            android:paddingEnd="20.0dip"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#b3ffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pwdInputLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_login_input_keyboard_enable"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etPwd"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingStart="20.0dip"
+            android:paddingEnd="20.0dip"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#b3ffffff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/submitLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_login_submit"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/submitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_login_submit"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15.0dip"
+        android:layout_marginRight="30dp"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvForgetPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingTop="5.0dip"
+            android:paddingBottom="5.0dip"
+            android:text="忘记密码"
+            android:textColor="#000000"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+</LinearLayout>
